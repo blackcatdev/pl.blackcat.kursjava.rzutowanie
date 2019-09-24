@@ -13,5 +13,7 @@ public class divisionTest {
 		System.out.println("Double/double: " + doubleValue1/doubleValue2);
 		System.out.println("Integer/double: " + integerValue1/doubleValue2);
 		System.out.println("Double/integer: " + doubleValue1/integerValue2);
+
+		System.out.println("Integer/integer + cast: " + integerValue1/(double) integerValue2);
 	}
 }
