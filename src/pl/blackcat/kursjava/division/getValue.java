@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 class getValue {
 
-	static double getValue(Scanner scanner){
+	static double getValue(Scanner scanner) {
 		while (true) {
 			try {
 				return scanner.nextDouble();
@@ -16,5 +16,13 @@ class getValue {
 			}
 
 		}
+	}
+
+	static char getChar(Scanner scanner) {
+		String temp = scanner.next();
+		if (temp.length() > 1)
+			throw new IllegalArgumentException("Miałeś wpisać jeden znak!");
+		else
+			return temp.charAt(0);
 	}
 }
